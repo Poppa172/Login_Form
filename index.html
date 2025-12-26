@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            position: relative;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container{
+            position: absolute;
+             top: 50%;
+             left: 20%;
+             transform: translate(-50%, -50%);
+             color: aliceblue;
+             padding: 2rem 2rem;
+             border-radius: 10px;
+        }
+
+        .group input {
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+
+        a{
+            color: #6AECE1;
+        }
+
+        .group {
+            margin-bottom: 2rem;
+        }
+
+        .btn button{
+            font-size: 15px;
+            margin-left: 40px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: rgb(148, 15, 148);
+            border: none;
+        }
+
+        .btn button:hover{
+            background-color: rgb(185, 35, 185);
+        }
+
+        .btn button::after{
+            background-color:rgb(231, 11, 231) ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <img src="./img/thumb-1920-1372163.jpeg" alt="">
+
+    <div class="container">
+        <h2>Login Form</h2>
+
+        <div class="group">
+        <label  id="gp" for="email">Email:</label>
+        <br>
+        <input type="email">
+        </div>
+
+        <div class="group">
+            <label id="gp" for="password">Password:</label>
+            <br>
+            <input type="password">
+        </div>
+        <footer>
+         <p><a href="#">Forgot Password?</a>  Sign In</p>
+        <i class="fa-brands fa-discord"></i>
+        </footer>
+
+        <div class="btn">
+            <button type="submit">Create Account</button>
+        </div>
+    </div>
+</body>
+</html>
+
